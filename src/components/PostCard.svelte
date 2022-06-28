@@ -1,0 +1,14 @@
+<script>
+    export let title;
+    export let description;
+    export let url 
+</script>
+
+<a href={url} alt={title}>
+  <div class="px-3 py-5 hover:shadow-lg rounded-md shadow-gray-600 transition duration-150">
+      <h1 class="font-bold text-xl">{title}</h1>
+      <h3 class="text-md">
+	  {description}
+      </h3>
+  </div>
+</a>
