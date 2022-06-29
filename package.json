@@ -21,6 +21,7 @@
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.14",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
@@ -32,12 +33,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@mapbox/rehype-prism": "^0.8.0",
-		"front-matter": "^4.0.2",
-		"glob": "^8.0.3",
-		"rehype": "^12.0.1",
-		"remark": "^14.0.2",
-		"remark-html": "^15.0.1",
 		"svelte-typewriter": "^3.0.0-alpha.12"
 	}
 }
