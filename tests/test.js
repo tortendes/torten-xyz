@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-
 test("contact to exist and have text.", async ({ page }) => {
   await page.goto("/contact");
   expect(await page.textContent("h1")).toBe("Contact");
