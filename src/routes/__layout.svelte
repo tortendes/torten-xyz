@@ -2,36 +2,41 @@
     import '../app.css'
 </script>
 
-<nav>
-    <div>
-        <a href="/">
-            <img src="/hs-static/torten-whole-white.webp" class="w-36" alt="Torten Logo">
-        </a>
-    </div>
-    <ul>
-        <li>
-            <a href="/articles">
-                Articles
-            </a>
-        </li>
-        <li>
-            <a href="/projects">
-                Projects
-            </a>
-        </li>
-        <li>
-            <a href="/contact">
-                Contact
-            </a>
-        </li>
-    </ul>
-</nav>
-<div>
-  <slot></slot>
+<div class="flex flex-col h-screen">
+  <nav>
+      <div>
+	  <a href="/">
+	      <img src="/hs-static/torten-whole-white.webp" class="w-36" alt="Torten Logo">
+	  </a>
+      </div>
+      <ul>
+	  <li>
+	      <a href="/articles/browse">
+		  Articles
+	      </a>
+	  </li>
+	  <li>
+	      <a href="/projects">
+		  Projects
+	      </a>
+	  </li>
+	  <li>
+	      <a href="/contact">
+		  Contact
+	      </a>
+	  </li>
+      </ul>
+  </nav>
+  <div class="md:flex md:justify-center px-3 md:px-0 flex-grow">
+      <div class="md:w-1/2 mt-6">
+	<slot></slot>
+      </div>
+  </div>
+  <footer>
+      <p>&copy; 2022 All Rights Reserved.</p>
+  </footer>
 </div>
-<footer>
-    <p>&copy; 2022 All Rights Reserved.</p>
-</footer>
+
 
 <style>
     nav {
