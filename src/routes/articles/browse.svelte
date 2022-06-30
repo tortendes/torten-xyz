@@ -15,6 +15,9 @@
     }
   }
 </script>
+<head>
+    <title>「Articles | Browse All」 - Torten</title>
+</head>
 
 <h1 class="text-4xl font-bold mb-5">All Posts</h1>
 
