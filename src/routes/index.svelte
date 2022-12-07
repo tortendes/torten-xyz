@@ -66,9 +66,9 @@
   <p>But, in terms of reading manga/manwha/manhua, yeah, I have read alot. Too much so that I'm not gonna list it here, because it may be too many, so uh yeah.</p>
   <p class="mt-2">Anyways, here's links :)</p>
   <div class="mt-3 mb-5 flex justify-between">
-    <a href="/projects" class="text-[#E06806]">Articles</a>
+    <a href="/articles" class="text-[#E06806]">Articles</a>
     <a href="/projects" class="text-[#E06806]">Projects</a>
-    <a href="/projects" class="text-[#E06806]">Socials</a>
-    <a href="/projects" class="text-[#E06806]">Contact</a>
+    <a href="/socials" class="text-[#E06806]">Socials</a>
+    <a href="/contact" class="text-[#E06806]">Contact</a>
   </div>
 </div>
