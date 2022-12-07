@@ -1,48 +1,5 @@
-<script>
-    import PostCard from '../components/PostCard.svelte';
-    import Typewriter from 'svelte-typewriter'
-
-    const socials = [
-      {
-	logo: 'Github',
-	link: 'https://github.com/tortendes',
-	iconLocation: '/hs-logo/src/gh.svg'
-      },
-      {
-	logo: 'Twitter',
-	link: 'https://twitter.com/tortenwashere',
-	iconLocation: '/hs-logo/src/twtr.svg'
-      },
-      {
-	logo: 'Twitch',
-	link: 'https://twitch.tv/tortenwashere',
-	iconLocation: '/hs-logo/src/tch.svg'
-      },
-      {
-	logo: 'Email',
-	link: 'mailto:talk@torten.xyz',
-	iconLocation: '/hs-logo/src/ml.svg'
-      },
-    ]
-    export const posts = {}
-</script>
-
-<script context="module">
-  export const load = async ({ fetch }) => {
-    const posts = await fetch('/api/posts.json')
-    const all = await posts.json()
-
-    return {
-      props: {
-	    posts: all
-      }
-    }
-  }
-</script>
-
-
 <head>
-    <title>「Home」 - Torten</title>
+  <title>「Home」 - Torten</title>
 </head>
 
 <div>
