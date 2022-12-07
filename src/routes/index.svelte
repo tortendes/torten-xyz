@@ -24,7 +24,7 @@
 	iconLocation: '/hs-logo/src/ml.svg'
       },
     ]
-    export let posts
+    export const posts = {}
 </script>
 
 <script context="module">
@@ -34,7 +34,7 @@
 
     return {
       props: {
-	posts: all
+	    posts: all
       }
     }
   }
@@ -45,44 +45,30 @@
     <title>「Home」 - Torten</title>
 </head>
 
-<div class="flex items-center text-5xl">
-    <h1>Hi</h1>
-    <img src="https://static.revolt.chat/emoji/mutant/1f44b-10160a.svg" class="w-12 ml-2" alt="Wave emoji">
-    <h1 class="ml-2">I'm</h1>
-    <img src="/hs-static/torten-whole-black.webp" class="w-36 ml-3" alt="Logo">
-</div>
-<h1 class="mt-2 text-2xl md:text-3xl flex items-center">
-    <span class="mr-1">I make</span> <Typewriter loop>
-	<span>web apps</span>
-	<span>mediocre design</span>
-	<span>and other stuff</span>
-    </Typewriter>
-</h1>
-<div class="mt-5 flex flex-col items-center justify-center">
-    <h1 class="text-3xl font-medium mb-3">Socials</h1>
-    <ul class="flex items-center gap-3">
-      {#each socials as item}
-	<li>
-	  <a href={item.link}>
-	    <img src={item.iconLocation} alt={`${item.logo} Logo`} class="w-10">
-	  </a>
-	</li>
-      {/each}
-    </ul>
-</div>
 <div>
-  <h1 class="text-3xl">Recent Posts</h1>
-  <ul>
-    {#each posts.slice(0,3) as post}
-      <li class="mb-5 last:mb-0">
-	<PostCard title={post.meta.title} description={post.meta.description} date={post.meta.date} url={post.path} />
-      </li>
-    {/each}
-    <li class="mb-5">
-      <div class="text-center">
-	<a href="/articles/browse" class="px-5 py-2 shadow-xl hover:bg-[#E06806] hover:text-white focus:shadow-inner transition duration-150 rounded-full">See All</a>
-      </div>
-    </li>
+  <h1 class="text-3xl font-medium mb-2">Hello, I'm Torten</h1>
+  <p>I am a highschool student with a hobby of web development. I have a blog but please don't expect me to update it regularly.</p>
+  <p>I have made several projects over my continuing course of web development, just go to <a href="/projects" class="text-[#E06806]">projects</a> and you'll see all of them.</p>
+  <p>I don't really play games but here are some of them that I like(d)</p>
+  <ul class="ml-6 list-disc">
+    <li>Backbone</li>
+    <li>Plague Inc. Evolved</li>
+    <li>Portal 2</li>
+    <li>Left 4 Dead 2</li>
   </ul>
+  <p>I also don't watch that much anime, but again, here's a few that I like(d)</p>
+  <ul class="ml-6 list-disc">
+    <li>Darwin's Game</li>
+    <li>Rising of the Shield Hero</li>
+    <li>Paripi Koumei</li>
+    <li>Tokyo Ghoul 🤷</li>
+  </ul>
+  <p>But, in terms of reading manga/manwha/manhua, yeah, I have read alot. Too much so that I'm not gonna list it here, because it may be too many, so uh yeah.</p>
+  <p class="mt-2">Anyways, here's links :)</p>
+  <div class="mt-3 flex justify-between">
+    <a href="/projects" class="text-[#E06806]">Articles</a>
+    <a href="/projects" class="text-[#E06806]">Projects</a>
+    <a href="/projects" class="text-[#E06806]">Socials</a>
+    <a href="/projects" class="text-[#E06806]">Contact</a>
+  </div>
 </div>
-
