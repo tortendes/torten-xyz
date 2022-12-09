@@ -14,7 +14,7 @@
     <div class="mt-5 text-lg">
         <p>Hello! My name is Torten. I make websites as a hobby, here are my social media links!</p>
     </div>
-    <div class="mt-7 flex flex-col items-center gap-2 md:w-1/2">
+    <div class="mt-7 flex flex-col items-center gap-2 w-full md:w-1/2">
         <SocialButton icon="hs-logo/src/gh.svg" text="Github" link="https://github.com/tortendes" />
         <SocialButton icon="hs-logo/src/tch.svg" text="Twitch" link="https://twitch.tv/tortenwashere" />
         <SocialButton icon="hs-logo/src/twtr.svg" text="Twitter" link="https://twitter.com/tortenwashere" />
