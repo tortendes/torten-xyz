@@ -23,8 +23,10 @@
 
 <ul class="mb-5">
   {#each posts as post}
-    <li class="mt-5 first:mt-0">
-      <PostCard url={post.path} title={post.meta.title} description={post.meta.description} date={post.meta.date} />
-    </li>
+    {#if !post.published }
+      <li class="mt-5 first:mt-0">
+        <PostCard url={post.path} title={post.meta.title} description={post.meta.description} date={post.meta.date} />
+      </li> 
+    {/if}
   {/each}
 </ul>
