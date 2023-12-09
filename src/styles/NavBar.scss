@@ -1,0 +1,76 @@
+header.navigation-bar {
+    @apply bg-transparent flex items-center justify-between shadow-xl;
+    button.toggle-button {
+        @apply bg-navbar-button bg-cover w-16 h-16 ;
+    }
+    button.toggle-button {
+        @apply flex flex-col items-center justify-center gap-1;
+    }
+    div.image-wrapper {
+        @apply ml-9;
+    }
+    button.toggle-button span {
+        @apply w-5 h-0.5 bg-white;
+    }
+}
+div.navigation-menu {
+    @apply right-0 w-full h-full fixed z-50 top-0 invisible hidden opacity-0 transition-opacity duration-[420ms] ease-out; 
+    &.open {
+        @apply visible block opacity-100;
+    }
+    div.wrapper {
+        @apply flex items-center h-full;
+        div.pc-left {
+            @apply w-1/2 h-full bg-gray-100 py-4 pl-9 md:visible md:opacity-100;
+            & ul.main-links {
+                @apply flex flex-col gap-1 tracking-wide;
+            }
+            & ul.main-links li a {
+                @apply font-handwriting text-5xl text-zinc-800 font-medium;
+            }
+            & ul.secondary-links {
+                @apply mt-3 flex flex-col tracking-wide
+            }
+        }
+        div.right {
+            @apply bg-navbar-button w-full md:w-1/2 py-4 pl-9 h-full bg-cover;
+            button.close {
+                @apply absolute top-0 right-0 w-16 h-16;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 0.1rem;
+                    height: 1.5rem;
+                    background: rgb(255, 255, 255);
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 0.1rem;
+                    height: 1.5rem;
+                    background: rgb(255, 255, 255);
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+            .main-links {
+                @apply flex flex-col gap-1 tracking-wide;
+                & li a {
+                    @apply font-handwriting text-3xl text-white font-medium;
+                }
+            }
+
+            .secondary-links {
+                @apply mt-5 flex flex-col tracking-wide;
+                & li a {
+                    @apply text-white
+                }
+            }
+
+        }
+    }
+}
